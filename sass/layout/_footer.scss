@@ -1,11 +1,15 @@
 .footer {
 	@include section;
 
-	@media screen and (min-width: 1200px) {
-		@include section(94px, 94px);
-	}
-
 	background-color: var(--bg-dark-color);
+}
+
+.footer__content {
+	margin-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+	}
 }
 
 .footer__wrapper {
@@ -32,8 +36,6 @@
 
 .footer__address {
 	font-style: inherit;
-
-	margin-bottom: 60px;
 
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 0;

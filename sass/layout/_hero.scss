@@ -41,8 +41,6 @@
 
 
 	@media screen and (min-width: 769px) {
-		@include section(200px, 200px);
-
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     	url(../images/bg/bg_desk.jpg);
 
@@ -50,6 +48,10 @@
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/bg/bg_desk@2x.jpg);
 		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		@include section(200px, 200px);
 	}
 }
 
