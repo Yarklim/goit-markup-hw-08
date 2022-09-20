@@ -2,7 +2,7 @@
 	display: block;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	letter-spacing: 0.03em;
 
 	text-align: center;
@@ -10,6 +10,10 @@
 	margin-bottom: 12px;
 	
 	color: #212121;
+
+	@media screen and (min-width: 1200px) {
+		line-height: 1.15;
+	}
 }
 
 .modal__form--details {
@@ -111,11 +115,16 @@
 
 	margin-bottom: 30px;
 
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.17;
 	letter-spacing: 0.03em;
 	
 	color: var(--main-color);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .label__agree--icon {

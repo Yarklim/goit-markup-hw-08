@@ -1,12 +1,27 @@
 .footer {
-	padding: 60px 0;
+	@include section;
+
+	@media screen and (min-width: 1200px) {
+		@include section(94px, 94px);
+	}
 
 	background-color: var(--bg-dark-color);
 }
 
 .footer__wrapper {
-	display: flex;
-	align-items: baseline;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-basis: 50%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;		
+	}
 }
 
 .footer__logo {
@@ -17,6 +32,12 @@
 
 .footer__address {
 	font-style: inherit;
+
+	margin-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+	}
 }
 
 .footer__address--item:not(:last-child) {
@@ -44,7 +65,12 @@
 }
 
 .footer__socials {
-	margin-left: 70px;
+	margin-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		margin-left: 70px;
+		margin-bottom: 0;
+	}
 }
 
 .footer__socials--title {
