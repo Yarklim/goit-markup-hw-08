@@ -909,7 +909,6 @@ img, svg {
 
 .peculiarities__item {
   max-width: 100%;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .peculiarities__item {
